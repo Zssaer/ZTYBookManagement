@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value="Book"/>
+    <version value="2"/>
+    <list>
+        <mapping class="com.zssaer.ztybookmanagement.bean.Book"></mapping>
+        <mapping class="com.zssaer.ztybookmanagement.bean.Admin"></mapping>
+    </list>
+</litepal>

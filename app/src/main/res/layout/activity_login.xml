@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B5495B"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true">
+
+    <LinearLayout
+        android:layout_width="225dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="图书管理系统"
+            android:textSize="28sp"
+            android:textColor="#ffff"
+            android:layout_marginBottom="15dp"
+            android:layout_gravity="center"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="5dp"
+            android:layout_gravity="center">
+            <TextView
+                android:layout_width="50sp"
+                android:layout_height="wrap_content"
+                android:text="用户名:"
+                android:textSize="14sp"
+                android:textColor="#ffff"
+                android:layout_marginRight="5dp"/>
+            <EditText
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/name"
+                android:background="#ffff"
+                android:textColor="@color/colorPrimary"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="5dp"
+            android:layout_gravity="center">
+            <TextView
+                android:layout_width="50sp"
+                android:layout_height="wrap_content"
+                android:text="密\t\t码:"
+                android:textSize="14sp"
+                android:textColor="#ffff"
+                android:layout_marginRight="5dp"/>
+            <EditText
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/password"
+                android:background="#ffff"
+                android:inputType="textPassword"
+                android:textColor="@color/design_default_color_primary"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:text="登录"
+        android:layout_gravity="end"
+        android:background="@color/cardview_shadow_start_color"
+        android:id="@+id/login"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:text="注册"
+        android:layout_gravity="left"
+        android:background="@color/cardview_shadow_start_color"
+        android:id="@+id/register"/>
+
+
+</FrameLayout>

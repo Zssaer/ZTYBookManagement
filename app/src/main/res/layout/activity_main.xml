@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3A8FB7"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginTop="38dp"
+        android:layout_marginBottom="5dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="ZTY图书后台管理中心"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text=""
+            android:layout_gravity="center"
+            android:id="@+id/name_main"/>
+    </LinearLayout>
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#77548D"
+        tools:openDrawer="start"
+        android:id="@+id/drawer_layout">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/content_frame">
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/drawer_show"
+                android:layout_gravity="bottom"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="43dp"
+                android:layout_marginBottom="78dp"
+                app:elevation="8dp"
+                android:src="@drawable/drawer"/>
+
+        </FrameLayout>
+        <LinearLayout
+            android:background="#DB4D6D"
+            android:orientation="vertical"
+            android:layout_gravity="start"
+            android:layout_width="240dp"
+            android:layout_height="match_parent">
+            <Button
+                android:text="管理图书库"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:id="@+id/book_button"
+                android:background="#3A8FB7"/>
+
+            <Button
+                android:text="管理用户订单"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:id="@+id/order_book"
+                android:background="#255359"/>
+
+            <Button
+                android:text="更改个人信息"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:id="@+id/user_info"
+                android:background="#91B493"/>
+
+            <Button
+                android:text="关于本应用"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:id="@+id/abuout"
+                android:background="#8F77B5"/>
+
+        </LinearLayout>
+
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+</LinearLayout>
